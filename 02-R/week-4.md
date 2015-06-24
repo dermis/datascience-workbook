@@ -1,17 +1,17 @@
 # Quiz
 
 1. What is produced at the end of this snippet of R code?
-```
-set.seed(1)
-rpois(5, 2)
-```
- * *A vector with the numbers 1, 1, 2, 4, 1*
- * *Because the `set.seed()' function is used, `rpois()' will always output the same vector in this code.*
+ ```
+ set.seed(1)
+ rpois(5, 2)
+ ```
+ - *A vector with the numbers 1, 1, 2, 4, 1*
+ - *Because the `set.seed()' function is used, `rpois()' will always output the same vector in this code.*
 
 2. What R function can be used to generate standard Normal random variables?
- * *rnorm*
- * *Functions beginning with the `r' prefix are used to simulate random variates.*
- * *Standard probability distributions in R have a set of four functions that can be used to simulate variates, evaluate the density, evaluate the cumulative density, and evaluate the quantile function.*
+ - *rnorm*
+ - *Functions beginning with the `r' prefix are used to simulate random variates.*
+ - *Standard probability distributions in R have a set of four functions that can be used to simulate variates, evaluate the density, evaluate the cumulative density, and evaluate the quantile function.*
 
 3.  When simulating data, why is using the set.seed() function important?
  * *It ensures that the sequence of random numbers starts in a specific place and is therefore reproducible.*
@@ -21,12 +21,12 @@ rpois(5, 2)
  * *Probability distribution functions beginning with the `q' prefix are used to evaluate the quantile (inverse cumulative distribution) function.*
 
 5. What does the following code do?
-```
-set.seed(10)
-x <- rep(0:1, each = 5)
-e <- rnorm(10, 0, 20)
-y <- 0.5 + 2 * x + e
-```
+ ```
+ set.seed(10)
+ x <- rep(0:1, each = 5)
+ e <- rnorm(10, 0, 20)
+ y <- 0.5 + 2 * x + e
+ ```
  * *Generate data from a Normal linear model*
 
 6. What R function can be used to generate Binomial random variables?
@@ -36,12 +36,12 @@ y <- 0.5 + 2 * x + e
  * *the function call stack*
 
 8. Consider the following R code
-```
-library(datasets)
-Rprof()
-fit <- lm(y ~ x1 + x2)
-Rprof(NULL)
-```
+ ```
+ library(datasets)
+ Rprof()
+ fit <- lm(y ~ x1 + x2)
+ Rprof(NULL)
+ ```
 (Assume that y, x1, and x2 are present in the workspace.) Without running the code, what percentage of the run time is spent in the 'lm' function, based on the 'by.total' method of normalization shown in 'summaryRprof()'?
  * *100%*
  * *When using `by.total' normalization, the top-level function (in this case, `lm()') always takes 100% of the time.*
