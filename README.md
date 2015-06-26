@@ -1,2 +1,2 @@
-# datascience-workbook
-Quizzes and assigments notes for Coursera Data Science
+# Data Science Workbook
+My personal quizzes and assignments notes for Coursera Data Science course
