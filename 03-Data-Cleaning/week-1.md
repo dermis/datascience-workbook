@@ -1,5 +1,6 @@
 # Quiz #1
 
+## 1.
 ```
 The American Community Survey distributes downloadable data about United States communities. Download the 2006 microdata survey about housing for the state of Idaho using download.file() from here:
 
@@ -18,12 +19,14 @@ data.val.clean <- data[complete.cases(data$VAL),]
 sum(data.val.clean$VAL >= 24)
 ```
 
+## 2.
 ```
 Use the data you loaded from Question 1. Consider the variable FES in the code book. Which of the "tidy data" principles does this variable violate?
 
 Tidy data has one variable per column.
 ```
 
+## 3.
 ```
 Download the Excel spreadsheet on Natural Gas Aquisition Program here:
 
@@ -44,6 +47,7 @@ sum(dat$Zip*dat$Ext,na.rm=T)
 36534720
 ```
 
+## 4.
 ```
 Read the XML data on Baltimore restaurants from here:
 
@@ -61,6 +65,7 @@ sum(xpathSApply(root.node,"//zipcode",xmlValue)==21231)
 127
 ```
 
+## 5.
 ```
 The American Community Survey distributes downloadable data about United States communities. Download the 2006 microdata survey about housing for the state of Idaho using download.file() from here:
 
